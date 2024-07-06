@@ -1,11 +1,18 @@
 import { Module } from '@nestjs/common';
 
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { FedacoModule } from '@gradii/nest-fedaco';
 
 @Module({
-  imports: [],
+  imports: [
+    FedacoModule.forRoot({
+      'default': {
+        driver: 'sqlite',
+        database: ':memory:'
+      }
+    })
+  ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [],
 })
 export class AppModule {}
