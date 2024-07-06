@@ -27,14 +27,6 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
-      - uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: |
-            node_modules
-            **/node_modules
-          key: "${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}"
-          restore-keys: "${{ runner.os }}-yarn-\n"
       - run: yarn install --frozen-lockfile
       - uses: nrwl/nx-set-shas@v4
 

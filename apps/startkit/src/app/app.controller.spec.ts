@@ -2,7 +2,6 @@ import { FedacoModule } from '@gradii/nest-fedaco';
 import { Test, TestingModule } from '@nestjs/testing';
 
 import { AppController } from './app.controller';
-import { AppModule } from './app.module';
 
 describe('AppController', () => {
   let app: TestingModule;
@@ -13,7 +12,7 @@ describe('AppController', () => {
         FedacoModule.forRoot({
           default: {
             driver: 'sqlite',
-            database: './tmp/example-nest-startkit.sqlite',
+            database: ':memory:',
           },
         }),
       ],
@@ -23,7 +22,7 @@ describe('AppController', () => {
   });
 
   describe('getData', () => {
-    it('should return "Hello API"', async () => {
+    it('should can add user', async () => {
       const appController = app.get<AppController>(AppController);
       await appController.initTable();
       await appController.addUser();
