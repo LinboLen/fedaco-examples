@@ -1,7 +1,7 @@
 {
-  "name": "fedaco-examples",
+  "name": "startkit",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/fedaco-examples/src",
+  "sourceRoot": "apps/startkit/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,14 +9,14 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "fedaco-examples:build"
+        "buildTarget": "startkit:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "fedaco-examples:build:development"
+          "buildTarget": "startkit:build:development"
         },
         "production": {
-          "buildTarget": "fedaco-examples:build:production"
+          "buildTarget": "startkit:build:production"
         }
       }
     }
