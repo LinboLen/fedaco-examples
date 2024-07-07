@@ -38,7 +38,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/fedaco-examples-e2e/**/*", "apps/startkit-e2e/**/*"]
+      "exclude": []
     }
   ],
   "nxCloudAccessToken": "YmY4YmZlNmUtMzJiNy00ZjA1LWI2NjgtMzgwZGFjYzY1ODVmfHJlYWQtd3JpdGU="
