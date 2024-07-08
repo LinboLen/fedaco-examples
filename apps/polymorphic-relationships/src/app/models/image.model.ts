@@ -1,4 +1,12 @@
-import { Column, forwardRef, Model, MorphToColumn, PrimaryGeneratedColumn, Table } from '@gradii/fedaco';
+import {
+  Column, CreatedAtColumn,
+  forwardRef,
+  Model,
+  MorphToColumn,
+  PrimaryGeneratedColumn,
+  Table,
+  UpdatedAtColumn
+} from '@gradii/fedaco';
 import { Post } from './post.model';
 import { User } from './user.model';
 
@@ -25,4 +33,9 @@ export class Image extends Model {
   })
   imageable: any;
 
+  @UpdatedAtColumn()
+  updated_at: Date;
+
+  @CreatedAtColumn()
+  created_at: Date;
 }
