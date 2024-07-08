@@ -8,10 +8,16 @@ describe('AppController', () => {
   beforeAll(async () => {
     app = await Test.createTestingModule({
       controllers: [AppController],
-      providers: [],
+      providers: []
     }).compile();
   });
 
-  describe('getData', () => {
+  describe('getData', async () => {
+    const controller = app.get(AppController);
+    await controller.addPost();
+    await controller.createPostImage();
+    const { list } = await controller.getImages();
+    expect(list.length).toBeGreaterThan(0);
   });
 });
+

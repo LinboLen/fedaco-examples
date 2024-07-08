@@ -1,12 +1,13 @@
 import {
   Column,
   CreatedAtColumn,
+  FedacoRelationType,
   forwardRef,
   Model,
   MorphOneColumn,
-  PrimaryGeneratedColumn, RelationType,
-  Table, UpdatedAtColumn,
-  FedacoRelationType
+  PrimaryGeneratedColumn,
+  Table,
+  UpdatedAtColumn
 } from '@gradii/fedaco';
 import { Image } from './image.model';
 

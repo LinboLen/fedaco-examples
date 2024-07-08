@@ -1,5 +1,5 @@
 import {
-  Column, CreatedAtColumn,
+  Column, CreatedAtColumn, FedacoRelationType,
   forwardRef,
   Model,
   MorphToColumn,
@@ -25,13 +25,11 @@ export class Image extends Model {
 
   @MorphToColumn({
     morphTypeMap: {
-      'Post': forwardRef(() => Post),
-      'User': forwardRef(() => User),
       'test_user': forwardRef(() => User),
-      'test_post': forwardRef(() => Post),
+      'test_post': forwardRef(() => Post)
     }
   })
-  imageable: any;
+  imageable: FedacoRelationType<User | Post>;
 
   @UpdatedAtColumn()
   updated_at: Date;

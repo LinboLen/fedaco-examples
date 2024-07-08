@@ -13,6 +13,16 @@ permissions:
 jobs:
   main:
     runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mariadb:lts
+        env:
+          MARIADB_ALLOW_EMPTY_PASSWORD: yes
+          MARIADB_ROOT_PASSWORD: 123456
+          MARIADB_DATABASE: test
+        ports:
+          - 3306:3306
+        options: --health-cmd="healthcheck.sh --connect --innodb_initialized" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v4
         with:
