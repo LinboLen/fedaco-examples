@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'polymorphic-relationships',
+  displayName: 'polymorphic-one-to-one',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
@@ -8,5 +8,5 @@ export default {
   },
   forceExit: true,
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/polymorphic-relationships',
+  coverageDirectory: '../../coverage/apps/polymorphic-one-to-one',
 };

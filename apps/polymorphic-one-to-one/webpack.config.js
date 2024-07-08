@@ -3,7 +3,7 @@ const { join } = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, '../../dist/apps/polymorphic-relationships'),
+    path: join(__dirname, '../../dist/apps/polymorphic-one-to-one'),
   },
   plugins: [
     new NxAppWebpackPlugin({

@@ -1,7 +1,7 @@
 {
-  "name": "polymorphic-relationships",
+  "name": "polymorphic-one-to-one",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/polymorphic-relationships/src",
+  "sourceRoot": "apps/polymorphic-one-to-one/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,14 +9,14 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "polymorphic-relationships:build"
+        "buildTarget": "polymorphic-one-to-one:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "polymorphic-relationships:build:development"
+          "buildTarget": "polymorphic-one-to-one:build:development"
         },
         "production": {
-          "buildTarget": "polymorphic-relationships:build:production"
+          "buildTarget": "polymorphic-one-to-one:build:production"
         }
       }
     }
