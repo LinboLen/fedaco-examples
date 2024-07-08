@@ -1139,22 +1139,22 @@
   dependencies:
     tslib "^2.3.0"
 
-"@gradii/fedaco@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.npmmirror.com/@gradii/fedaco/-/fedaco-1.1.3.tgz#1cc59c700ec8ccba64ebd76de09077a5ef1ef9cb"
-  integrity sha512-LqUmRb0S4s+Ds/2AkTK+a49iHOendjTdzVz3I5i7FTixImEi6zok8R720ySMSbvssFddiMTSCbWxS26ZL7pBIQ==
+"@gradii/fedaco@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.npmmirror.com/@gradii/fedaco/-/fedaco-1.1.4.tgz#366b391e2e269e10dd70716e9a04bb6c76f7fd81"
+  integrity sha512-8ZfYwMwZ/ZyhJmVEqTlc6R+rvOFdJi0n01bn+hvmOOuLLO1N0mjZm+uKIigQtn1s2hJ8n7WgXCvd5p7G+sT+cQ==
   dependencies:
     "@gradii/annotation" "^3.0.1"
-    "@gradii/nanofn" "^2.0.1"
+    "@gradii/nanofn" "^2.0.2"
     date-fns "^3.6.0"
     ramda "^0.30.1"
     rxjs "^7.8.1"
     tslib "^2.3.0"
 
-"@gradii/nanofn@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmmirror.com/@gradii/nanofn/-/nanofn-2.0.1.tgz#39c01ee6cc408c27a875eb7153918d6797b48c50"
-  integrity sha512-4DzFoZPN4aW6I66bQvQ5xK6bbKQeNNRDO2i4bIEqHwfzmjkMoC42GO/zEPHhPliFQTll1f4niGHZKm+VXjCsPg==
+"@gradii/nanofn@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmmirror.com/@gradii/nanofn/-/nanofn-2.0.2.tgz#cd7131e5aec323ece298274a1697784ea56c946a"
+  integrity sha512-h3bxsYOGVRE2FSHQCIGOoYHU1jUtOtQIa/xxKZUR+L2yR0c7lzcdN5Nc1tDQnZOiQMJFKY1q1SNZuscMRu6i1Q==
 
 "@gradii/nest-fedaco@^0.0.2":
   version "0.0.2"
