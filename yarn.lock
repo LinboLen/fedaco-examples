@@ -1139,10 +1139,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@gradii/fedaco@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.npmmirror.com/@gradii/fedaco/-/fedaco-1.1.4.tgz#366b391e2e269e10dd70716e9a04bb6c76f7fd81"
-  integrity sha512-8ZfYwMwZ/ZyhJmVEqTlc6R+rvOFdJi0n01bn+hvmOOuLLO1N0mjZm+uKIigQtn1s2hJ8n7WgXCvd5p7G+sT+cQ==
+"@gradii/fedaco@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.npmmirror.com/@gradii/fedaco/-/fedaco-1.1.6.tgz#dacac56ac81f02a920c4aa4165c2b0d751b1e2d4"
+  integrity sha512-U1ZTO1pkVL7RQNLBx1qqbVEoRDh3pYAtgbTN1Uwqqu0XoWJHb9ijnX3AoB8M26PgxP8oBDmNz+u87W5Ru4FGug==
   dependencies:
     "@gradii/annotation" "^3.0.1"
     "@gradii/nanofn" "^2.0.2"
