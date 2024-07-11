@@ -1,0 +1,24 @@
+{
+  "name": "custom-pivot",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/custom-pivot/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "custom-pivot:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "custom-pivot:build:development"
+        },
+        "production": {
+          "buildTarget": "custom-pivot:build:production"
+        }
+      }
+    }
+  }
+}
